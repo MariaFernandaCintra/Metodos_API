@@ -1,5 +1,6 @@
 let users = [];
 
+
 module.exports = class userController {
   static async createUser(req, res) {
     const { cpf, email, password, name } = req.body;
@@ -25,7 +26,7 @@ module.exports = class userController {
     }
 
     // Cria e adiciona novo usuário
-    const newUser = { cpf, email, password, name };
+    const newUser = {cpf, email, password, name };
     users.push(newUser);
 
     return res
